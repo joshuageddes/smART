@@ -1,0 +1,25 @@
+{
+  "name": "firebasetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuageddes/firebasetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuageddes/firebasetest/issues"
+  },
+  "homepage": "https://github.com/joshuageddes/firebasetest#readme",
+  "dependencies": {
+    "firebase": "^9.0.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+}

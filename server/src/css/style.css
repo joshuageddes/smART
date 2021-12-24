@@ -1,0 +1,24 @@
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: right;
+
+
+}
+
+body {
+    font-family: 'Playfair';
+    background-color: #F0F6F7;
+    margin-top: 5em; 
+}
+
+.picture {
+    width: 80%;
+}
+
+.suggestion {
+    width:100px; 
+    height: auto;
+    border: radius 0px;
+    display: inline-block;
+}

@@ -1,0 +1,25 @@
+
+{
+"hosting": {
+  "public": "server/src/templates",
+  "ignore": [
+    "firebase.json",
+    "/.*",
+    "/node_modules/"
+  ],
+  "rewrites": [{
+
+    "source": "**",
+    "run": {
+      "serviceId": "test"
+    }
+  }
+
+  ]
+
+
+
+}
+}
+  
+  

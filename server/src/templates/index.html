@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>smART</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=PLayfair:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+</head>
+<body>
+
+   <div class="d-lg-flex d-block py-4">
+    
+    <div class="containercontainer-fluid">
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></div>
+    <br>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-light btn-lg"><label for="file" style="cursor: pointer;"><strong>Upload Image</strong></label></button>
+        
+    </div>
+    </div>
+
+
+   <div class="py-5">
+    <img id="output" width="60%">
+    </div>
+
+    <script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+    </div>
+    <h1>{{ artistData[0] }} </h1>
+
+   <div class="container">    
+   <img scr="../static/dataset/Vincent_van_Gogh_3.jpg">
+   </div>
+</body>
+</html>
